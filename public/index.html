@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haber Sayfası</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    /* styles.css */
+    .haberKutusu {
+      border: 1px solid #ddd;
+      display: grid;
+      font-size: 12px;
+      padding: 10px;
+      gap: 2px;
+ 
+    }
+    #haberListesi .haberKutusu {
+  display: grid;
+ 
+  
+}
+#haberListesi .haberKutusu p{
+  display: none;
+}
+#haberListesi .haberKutusu .strong{
+  display: block;
+  background: #000;
+}
+  </style>
+</head>
+
+<body>
+  <nav class="bg-gray-900 text-white text-sm p-2 pt-5 ">
+    <ul class="flex justify-between  ">
+      <a class="text-xl font-bold">NEWS</a>
+      <a href="index.html" class=" hover:text-gray-200">Anasayfa</a>
+      <a href="" class=" hover:text-gray-200">Hakkımızda</a>
+      <a href="" class=" hover:text-gray-200">İletişim</a>
+      <button class="bg-black text-white p-2 rounded-full border hover:bg-gray-800 shadow-2xl text-xs ">Abone
+        ol!</button>
+    </ul>
+  </nav>
+  <div class="container mx-auto md:flex grid">
+
+    <header class=" m-16 uppercase text-4xl font-thin">
+
+      <div id="haberListesii" class="md:flex grid md:flex-wrap justify-start items-start">
+
+          <h1>How Digitalization Is Supercharging Dubai’s Economy – In Every Sector</h1>
+          <video autoplay loop class="mt-12 w-full  border-2 border-black">
+            <source
+              src="https://www.shutterstock.com/shutterstock/videos/1098958197/preview/stock-footage-animation-of-woman-controlling-matrix-screen-floating-transparent-screen-modern-display-technology.webm">
+          </video>
+        </div>
+        <div class="w-1/2">
+
+          <div id="haberListesi" class="grid grid-cols-2 gap-5"></div>
+        </div>
+        <div id="haberListesii" class="md:flex grid md:flex-wrap justify-start items-start">
+
+          <h1>How Digitalization Is Supercharging Dubai’s Economy – In Every Sector</h1>
+          <video autoplay loop class="mt-12 w-full  border-2 border-black">
+            <source
+              src="https://www.shutterstock.com/shutterstock/videos/1098958197/preview/stock-footage-animation-of-woman-controlling-matrix-screen-floating-transparent-screen-modern-display-technology.webm">
+          </video>
+        </div>
+        <div class="w-1/2">
+   
+          <div id="haberListesi2" class="grid grid-cols-2 gap-5"></div>
+        </div>
+    </header>
+
+    <aside class="md:w-12/12 justify-start">
+      <h1 class="grid md:mx-16 mt-16 uppercase text-4xl font-thin h-32">Haberler</h1>
+      <div id="haberListesiAside" class="grid gap-5 w-6/6"></div>
+    </aside>
+  </div>
+
+  <footer class="bg-gray-900 text-white text-sm p-2 p-52 ">
+    <ul class="flex justify-around  ">
+      <a class="text-xl font-bold">NEWS</a>
+      <div class="grid gap-6">
+        <a href="index.html" class=" hover:text-gray-200">Anasayfa</a>
+        <a href="" class=" hover:text-gray-200">Hakkımızda</a>
+        <a href="" class=" hover:text-gray-200">İletişim</a>
+        <a href="" class=" hover:text-gray-200">Abone ol!</a>
+      </div>
+      <!-- Diğer bağlantılar ve abone ol butonları -->
+    </ul>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="../services/mock.json"></script>
+  <script src="detayScript.js"></script>
+
+
+  
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="flex p-14 justify-between" >
+          <a class="text-xl font-bold">NEWS</a>
+          <a href="index.html">Anasayfa</a>
+          <a href="">Hakkımızda</a>
+          <a href="">İletişim</a>  
+          <button  class="bg-black text-white p-2 px-5 rounded-full border hover:bg-gray-800 shadow-2xl">Abone ol!</button>
+        </ul>
+      </nav>
+      <article  class="grid justify-center">
+    <div id="detay"class="container grid gap-10 justify-center items-center border w-11/12 p-14" >
+        <h1 id="baslik" class="text-3xl"></h1>
+        <img id="detay-img" alt="Haber Resmi">
+        <p id="detay-icerik" class="container w-4/5"></p>
+        <p><strong>Haber Tarihi:</strong> <span id="detay-tarih"></span></p>
+        <button id="paylas-button" class="bg-black w-36 mx-auto text-white p-2 rounded-full border hover:bg-gray-800 shadow-2xl">İçeriği Paylaş</button>
+      </div>
+</article>
+      <script src="./detayScript.js"></script>
+      <script src="../services/mock.json"></script>
+</body>
+</html>
