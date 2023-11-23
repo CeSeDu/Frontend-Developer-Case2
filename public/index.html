@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haber Sayfası</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* styles.css */
+      .haberKutusu {
+        border: 1px solid #ddd;
+        display: grid;
+        font-size: 12px;
+        padding: 10px;
+        gap: 2px;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haber Sayfası</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <style>
-    /* styles.css */
-    .haberKutusu {
-      border: 1px solid #ddd;
-      display: grid;
-      font-size: 12px;
-      padding: 10px;
-      gap: 2px;
- 
-    }
-    #haberListesi .haberKutusu {
-  display: grid;
- 
-  
-}
-#haberListesi .haberKutusu p{
-  display: none;
-}
-#haberListesi .haberKutusu .strong{
-  display: block;
-  background: #000;
-}
-  </style>
-</head>
+      #haberListesi .haberKutusu {
+        display: none;
+      }
 
-<body>
-  <nav class="bg-gray-900 text-white text-sm p-2 pt-5 ">
-    <ul class="flex justify-between  ">
-      <a class="text-xl font-bold">NEWS</a>
-      <a href="index.html" class=" hover:text-gray-200">Anasayfa</a>
-      <a href="" class=" hover:text-gray-200">Hakkımızda</a>
-      <a href="" class=" hover:text-gray-200">İletişim</a>
-      <button class="bg-black text-white p-2 rounded-full border hover:bg-gray-800 shadow-2xl text-xs ">Abone
-        ol!</button>
-    </ul>
-  </nav>
-  <div class="container mx-auto md:flex grid">
+      #haberListesi .haberKutusu p {
+        display: none;
+      }
 
-    <header class=" m-16 uppercase text-4xl font-thin">
+      #haberListesi .haberKutusu .strong {
+        display: block;
+        background: #000;
+      }
+      #haberListesi3{
+        display: grid;
+      }
+      #haberListesi3 .haberKutusu{
+        display: flex;
+      }
+      #haberListesi3 .haberKutusu img{
+        width: 100px;
+      }
+    </style>
+  </head>
 
-      <div id="haberListesii" class="md:flex grid md:flex-wrap justify-start items-start">
-
-          <h1>How Digitalization Is Supercharging Dubai’s Economy – In Every Sector</h1>
-          <video autoplay loop class="mt-12 w-full  border-2 border-black">
+  <body>
+    <nav class="bg-gray-900 text-white text-sm p-2 pt-5">
+      <ul class="flex justify-between items-center">
+        <a class="text-xl font-light bg-red-600 p-2">NEWS</a>
+        <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+        <a href="" class="hover:text-gray-200">Hakkımızda</a>
+        <a href="" class="hover:text-gray-200">İletişim</a>
+        <button
+          class="bg-black text-white p-2 rounded-full border hover:bg-gray-800 shadow-2xl text-xs"
+        >
+          Abone ol!
+        </button>
+      </ul>
+    </nav>
+    <div class="container mx-auto md:flex grid">
+      <header class="m-16 uppercase text-4xl font-thin">
+      
+        <div class=" md:grid-cols-2 grid-cols-1  gap-12">
+          <div id="haberListesii" class=" grid">
+          <h1>
+            How Digitalization Is Supercharging Dubai’s Economy – In Every
+            Sector
+          </h1>
+          <video autoplay loop class="mt-12  w-full h-3/3 border-2 border-black">
             <source
-              src="https://www.shutterstock.com/shutterstock/videos/1098958197/preview/stock-footage-animation-of-woman-controlling-matrix-screen-floating-transparent-screen-modern-display-technology.webm">
+              src="https://media.istockphoto.com/id/1281672073/tr/video/tablet-ekran%C4%B1nda-online-haber-makalesi-elektronik-gazete-veya-dergi-son-g%C3%BCnl%C3%BCk-bas%C4%B1n-ve-medya.mp4?s=mp4-640x640-is&k=20&c=M2c41llXIBzebjcX5gVTuDABJ-kS87FtuF5ydJsjO8M="
+            />
           </video>
+          <div id="haberListesi3" class=" mt-5 grid gap-5"></div>
         </div>
-        <div class="w-1/2">
-
-          <div id="haberListesi" class="grid grid-cols-2 gap-5"></div>
+          <div id="haberListesi" class="md:grid-cols-2 "></div>
+    
         </div>
-        <div id="haberListesii" class="md:flex grid md:flex-wrap justify-start items-start">
-
-          <h1>How Digitalization Is Supercharging Dubai’s Economy – In Every Sector</h1>
-          <video autoplay loop class="mt-12 w-full  border-2 border-black">
-            <source
-              src="https://www.shutterstock.com/shutterstock/videos/1098958197/preview/stock-footage-animation-of-woman-controlling-matrix-screen-floating-transparent-screen-modern-display-technology.webm">
-          </video>
+     
+        <div class="w-2/2 flex flex-wrap">
+          <div class="flex m-12">
+            <h1 class=" h-full items-center flex">
+              How Digitalization Is Supercharging Dubai’s Economy – In Every
+              Sector
+            </h1>
+            <video autoplay loop class="mt-12 h-full  border-2 border-black">
+              <source
+                src="https://vod-progressive.akamaized.net/exp=1700785302~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1684%2F16%2F408422446%2F1750585445.mp4~hmac=fc8b288247579da9d7e1068e6a673983fade183a8a932fa58b83f144aa67d0be/vimeo-prod-skyfire-std-us/01/1684/16/408422446/1750585445.mp4"
+              />
+            </video>
+          </div>
+         
+          <div id="haberListesi2" class="grid grid-cols-3 gap-12 mt-32"></div>
         </div>
-        <div class="w-1/2">
-   
-          <div id="haberListesi2" class="grid grid-cols-2 gap-5"></div>
+      </header>
+
+      <aside class="md:w-12/12 justify-start ">
+        <h1 class="grid m-3 mt-4 uppercase text-4xl font-thin ">
+          Haberler
+        </h1>
+        <div id="haberListesiAside" class="md:grid gap-5 w-6/6 hidden"></div>
+      </aside>
+    </div>
+
+    <footer class="bg-gray-900 text-white text-sm  p-52">
+      <ul class="flex justify-around">
+        <a class="text-xl font-light bg-red-600 p-2 h-11">NEWS</a>
+        <div class="grid gap-6">
+          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+          <a href="" class="hover:text-gray-200">Hakkımızda</a>
+          <a href="" class="hover:text-gray-200">İletişim</a>
+          <a href="" class="hover:text-gray-200">Abone ol!</a>
         </div>
-    </header>
+        <!-- Diğer bağlantılar ve abone ol butonları -->
+      </ul>
+    </footer>
 
-    <aside class="md:w-12/12 justify-start">
-      <h1 class="grid md:mx-16 mt-16 uppercase text-4xl font-thin h-32">Haberler</h1>
-      <div id="haberListesiAside" class="grid gap-5 w-6/6"></div>
-    </aside>
-  </div>
-
-  <footer class="bg-gray-900 text-white text-sm p-2 p-52 ">
-    <ul class="flex justify-around  ">
-      <a class="text-xl font-bold">NEWS</a>
-      <div class="grid gap-6">
-        <a href="index.html" class=" hover:text-gray-200">Anasayfa</a>
-        <a href="" class=" hover:text-gray-200">Hakkımızda</a>
-        <a href="" class=" hover:text-gray-200">İletişim</a>
-        <a href="" class=" hover:text-gray-200">Abone ol!</a>
-      </div>
-      <!-- Diğer bağlantılar ve abone ol butonları -->
-    </ul>
-  </footer>
-
-  <script src="./script.js"></script>
-  <script src="../services/mock.json"></script>
-  <script src="detayScript.js"></script>
-
-
-  
-</body>
-
+    <script src="./script.js"></script>
+    <script src="../services/mock.json"></script>
+    <script src="detayScript.js"></script>
+  </body>
 </html>
