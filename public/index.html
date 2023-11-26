@@ -5,44 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Haber Sayfası</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../input.css" />
     <style>
       /* styles.css */
-      .haberKutusu {
-        border: 1px solid #ddd;
-        display: grid;
-        font-size: 12px;
-        padding: 10px;
-        gap: 2px;
-      }
-
-      #haberListesi .haberKutusu {
-        display: none;
-      }
-
-      #haberListesi .haberKutusu p {
-        display: none;
-      }
-
-      #haberListesi .haberKutusu .strong {
-        display: block;
-        background: #000;
-      }
-      #haberListesi3{
-        display: grid;
-      }
-      #haberListesi3 .haberKutusu{
-        display: flex;
-      }
-      #haberListesi3 .haberKutusu img{
-        width: 100px;
-      }
+   
     </style>
   </head>
 
   <body>
     <nav class="bg-gray-900 text-white text-sm p-2 pt-5">
       <ul class="flex justify-between items-center">
-        <a class="text-xl font-light bg-red-600 p-2">NEWS</a>
+        <a href="index.html" class="text-xl font-light bg-red-600 p-2 h-11 text-center cursor-pointer">NEWS</a>
         <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
         <a href="" class="hover:text-gray-200">Hakkımızda</a>
         <a href="" class="hover:text-gray-200">İletişim</a>
@@ -73,15 +46,15 @@
     
         </div>
      
-        <div class="w-2/2 flex flex-wrap">
-          <div class="flex m-12">
+        <div class="w-2/2 flex flex-wrap gap-5">
+          <div class="flex">
             <h1 class=" h-full items-center flex">
               How Digitalization Is Supercharging Dubai’s Economy – In Every
               Sector
             </h1>
-            <video autoplay loop class="mt-12 h-full  border-2 border-black">
+            <video autoplay loop class="mt-12  border-2 border-black">
               <source
-                src="https://vod-progressive.akamaized.net/exp=1700785302~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1684%2F16%2F408422446%2F1750585445.mp4~hmac=fc8b288247579da9d7e1068e6a673983fade183a8a932fa58b83f144aa67d0be/vimeo-prod-skyfire-std-us/01/1684/16/408422446/1750585445.mp4"
+                src="https://media.istockphoto.com/id/1366617934/tr/video/news-filming-studio.mp4?s=mp4-640x640-is&k=20&c=sms1LB167TRG8A68GR8UXXJ0vKVIMEd_WTWNNVo2y_g="
               />
             </video>
           </div>
@@ -99,11 +72,63 @@
     </div>
 
     <footer class="bg-gray-900 text-white text-sm  p-52">
-      <ul class="flex justify-around">
-        <a class="text-xl font-light bg-red-600 p-2 h-11">NEWS</a>
-        <div class="grid gap-6">
+      <ul class="flex justify-between">
+        <div class="gap-2 grid ">
+          <a href="index.html" class="text-xl font-light bg-red-600 p-2 h-11 text-center cursor-pointer">NEWS</a>
+          <div>
+            <div class="social flex gap-2">
+              <i class="fa-brands fa-instagram cursor-pointer hover:bg-red-900 p-2"></i>
+              <i class="fa-brands fa-twitter cursor-pointer hover:bg-red-900 p-2"></i>
+              <i class="fa-brands fa-facebook cursor-pointer hover:bg-red-900 p-2"></i>
+              <i class="fa-brands fa-tiktok cursor-pointer hover:bg-red-900 p-2"></i>
+              <i class="fa-brands fa-linkedin cursor-pointer hover:bg-red-900 p-2"></i>
+            </div>
+          </div>
+        </div>
+    
+        <div class="grid gap-2">
+          <a href="index.html"  class="font-bold text-2xl  mb-5">NEWS</a>
+          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+
+        </div>
+        <div class="grid gap-2">
+          <a href="index.html"  class="font-bold text-2xl  mb-5">NEWS</a>
+          <a href="index.html" class="hover:text-gray-200">İletişim</a>
+          <a href="index.html" class="hover:text-gray-200">İletişim</a>
+          <a href="index.html" class="hover:text-gray-200">İletişim</a>
+          <a href="index.html" class="hover:text-gray-200">İletişim</a>
+          <a href="index.html" class="hover:text-gray-200">İletişim</a>
+
+        </div>
+        <div class="grid gap-2">
+          <a href="index.html"  class="font-bold text-2xl  mb-5">NEWS</a>
+          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+          
+        </div>
+        <div class="grid gap-2">
+          <a href="index.html"  class="font-bold text-2xl  mb-5">NEWS</a>
+          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+
+        </div>
+        <div class="grid gap-2">
+          <a href="index.html"  class="font-bold text-2xl  mb-5">NEWS</a>
           <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
           <a href="" class="hover:text-gray-200">Hakkımızda</a>
+          <a href="" class="hover:text-gray-200">İletişim</a>
+          <a href="" class="hover:text-gray-200">İletişim</a>
           <a href="" class="hover:text-gray-200">İletişim</a>
           <a href="" class="hover:text-gray-200">Abone ol!</a>
         </div>
@@ -114,5 +139,6 @@
     <script src="./script.js"></script>
     <script src="../services/mock.json"></script>
     <script src="detayScript.js"></script>
+    <script src="https://kit.fontawesome.com/e4ad9061e9.js" crossorigin="anonymous"></script>
   </body>
 </html>

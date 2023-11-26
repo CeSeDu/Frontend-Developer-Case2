@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.haberKutusu {
+    border: 1px solid #ddd;
+    display: grid;
+    font-size: 12px;
+    padding: 10px;
+    gap: 2px;
+  }
+
+  #haberListesi .haberKutusu {
+    display: none;
+  }
+
+  #haberListesi .haberKutusu p {
+    display: none;
+  }
+
+  #haberListesi .haberKutusu .strong {
+    display: block;
+    background: #000;
+  }
+  #haberListesi3{
+    display: grid;
+  }
+  #haberListesi3 .haberKutusu{
+    display: flex;
+  }
+  #haberListesi3 .haberKutusu img{
+    width: 100px;
+  }

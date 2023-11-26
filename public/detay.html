@@ -10,7 +10,7 @@
 <body>
     <nav>
         <ul class="flex p-14 justify-between" >
-          <a class="text-xl font-bold">NEWS</a>
+          <a href="index.html" class="text-xl font-bold">NEWS</a>
           <a href="index.html">Anasayfa</a>
           <a href="">Hakkımızda</a>
           <a href="">İletişim</a>  
@@ -23,7 +23,13 @@
         <img id="detay-img" alt="Haber Resmi">
         <p id="detay-icerik" class="container w-4/5"></p>
         <p><strong>Haber Tarihi:</strong> <span id="detay-tarih"></span></p>
-        <button id="paylas-button" class="bg-black w-36 mx-auto text-white p-2 rounded-full border hover:bg-gray-800 shadow-2xl">İçeriği Paylaş</button>
+        <div>
+          <button onclick="paylas('instagram')" class="bg-blue-500 text-white p-2 rounded-full border hover:bg-blue-700 shadow-2xl">Instagram'da Paylaş</button>
+          <button onclick="paylas('whatsapp')" class="bg-green-500 text-white p-2 rounded-full border hover:bg-green-700 shadow-2xl">Whatsapp'ta Paylaş</button>
+          <button onclick="paylas('linkedin')" class="bg-indigo-500 text-white p-2 rounded-full border hover:bg-indigo-700 shadow-2xl">LinkedIn'da Paylaş</button>
+          <button onclick="paylas('twitter')" class="bg-blue-400 text-white p-2 rounded-full border hover:bg-blue-600 shadow-2xl">Twitter'da Paylaş</button>
+          <button onclick="paylas('tiktok')" class="bg-pink-500 text-white p-2 rounded-full border hover:bg-pink-700 shadow-2xl">TikTok'ta Paylaş</button>
+      </div>
       </div>
 </article>
       <script src="./detayScript.js"></script>

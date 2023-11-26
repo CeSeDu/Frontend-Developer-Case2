@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const haberListesiDiv = document.getElementById('haberListesi');
   const haberListesiAsideDiv = document.getElementById('haberListesiAside');
   const haberListesi2 = document.getElementById('haberListesi2');
   const haberListesi3 = document.getElementById('haberListesi3');
@@ -8,15 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('../services/mock.json')
   .then(response => response.json())
   .then(haberler => {
-    const maxHaberListesi1 = 12;
-    const maxHaberListesi2 = 16;
-    const maxHaberListesi3 = 24;
-    const maxHaberListesi4 = 9;
+    const maxHaberListesi2 = 12;
+    const maxHaberListesi3 = 12;
+    const maxHaberListesi4 = 12;
 
-    haberler.slice(0, maxHaberListesi1).forEach(haber => {
-      const haberDiv = haberKutusuIcerigiOlustur(haber.title, haber.content, haber.date, haber.img, `detay.html?id=${haber.id}`);
-      haberListesiDiv.appendChild(haberDiv);
-    });
 
     haberler.slice(0, maxHaberListesi2).forEach(haber => {
       const haberDiv = haberKutusuIcerigiOlustur(haber.title, haber.content, haber.date, haber.img, `detay.html?id=${haber.id}`);
@@ -53,6 +47,7 @@ function haberKutusuIcerigiOlustur(baslik, icerik, tarih, resimURL, detayLink) {
 
   return haberDiv;
 }
+
 
 function haberKutusuIcerigiOlustur4(baslik, resimURL, aciklama, detayLink) {
   var haberDiv = document.createElement('a');
