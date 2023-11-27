@@ -33,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // JSON verileri alınırken bir hata olursa, hata mesajını göster
         console.error("Veri alınamadı veya işlenirken bir hata oluştu:", error);
         const hataMesaji = document.createElement("p");
-        hataMesaji.innerText =
-          "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.";
         document.getElementById("detay").appendChild(hataMesaji);
       });
   } else {
