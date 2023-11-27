@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('../services/mock.json')
   .then(response => response.json())
   .then(haberler => {
-    const maxHaberListesi2 = 12;
+    const maxHaberListesi2 = 14;
     const maxHaberListesi3 = 12;
     const maxHaberListesi4 = 12;
 

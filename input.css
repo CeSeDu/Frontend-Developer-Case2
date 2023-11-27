@@ -9,7 +9,9 @@
     padding: 10px;
     gap: 2px;
   }
-
+  h3{
+    font-weight: 900;
+  }
   #haberListesi .haberKutusu {
     display: none;
   }
@@ -27,6 +29,10 @@
   }
   #haberListesi3 .haberKutusu{
     display: flex;
+    flex-wrap: wrap;
+  }
+  #haberListesi3 .haberKutusu h3{
+  font-weight: 900;
   }
   #haberListesi3 .haberKutusu img{
     width: 100px;

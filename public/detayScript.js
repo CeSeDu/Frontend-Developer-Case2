@@ -1,4 +1,3 @@
-// detayScript.js
 document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const haberId = params.get('id');
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // Detay sayfasını güncelle
           document.getElementById('baslik').innerText = mockHaber.title;
           document.getElementById('detay-img').src = mockHaber.img;
-          document.getElementById('detay-icerik').innerText = mockHaber.content;
+          document.getElementById('detay-icerik').innerText = mockHaber.content || 'Haber içeriği bulunamadı.';
           document.getElementById('detay-tarih').innerText = mockHaber.date;
 
           // İçeriği paylaş butonunu ekle
@@ -29,7 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById('detay').appendChild(hataMesaji);
         }
       })
-      .catch(error => console.error('Veri alınamadı:', error));
+      .catch(error => {
+        // JSON verileri alınırken bir hata olursa, hata mesajını göster
+        console.error('Veri alınamadı veya işlenirken bir hata oluştu:', error);
+        const hataMesaji = document.createElement('p');
+        hataMesaji.innerText = 'Bir hata oluştu. Lütfen daha sonra tekrar deneyin.';
+        document.getElementById('detay').appendChild(hataMesaji);
+      });
   } else {
     // Eğer haberId parametresi yoksa, hata mesajını göster
     const hataMesaji = document.createElement('p');
