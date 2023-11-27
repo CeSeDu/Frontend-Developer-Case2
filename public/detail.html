@@ -1,147 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <nav class="bg-gray-900 text-white text-sm p-2 pt-5 fixed w-full">
-      <ul class="flex justify-between items-center">
-        <a
-          href="index.html"
-          class="text-xl font-light bg-red-600 p-2 h-11 text-center cursor-pointer"
-          >NEWS</a
-        >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <nav class="bg-gray-900 text-white text-sm p-2 pt-5 fixed w-full">
+    <ul class="flex justify-between items-center">
+      <a href="index.html" class="text-xl font-light bg-red-600 p-2 h-11 text-center cursor-pointer">NEWS</a>
+      <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+      <a href="" class="hover:text-gray-200">Hakkımızda</a>
+      <a href="" class="hover:text-gray-200">İletişim</a>
+
+      <button class="bg-black text-white p-2 rounded-full border hover:bg-gray-800 shadow-2xl text-xs">
+        Abone ol!
+      </button>
+    </ul>
+  </nav>
+  <article class="grid justify-center">
+    <div id="detay" class="container grid gap-10 justify-center items-center border w-11/12 p-14 mt-32 m-12">
+      <h1 id="baslik" class="text-3xl"></h1>
+      <img id="detay-img" alt="Haber Resmi" />
+      <p id="detay-icerik" class="container w-4/5"></p>
+      <p><strong>Haber Tarihi:</strong> <span id="detay-tarih"></span></p>
+      <div>
+        <a href="https://www.linkedin.com/shareArticle?url=https://your-website.com" target="_blank"
+          rel="noopener noreferrer">
+          <button onclick="paylas('linkedin')"
+            class="bg-indigo-500 text-white p-2 rounded-full border hover:bg-indigo-700 shadow-2xl">
+            LinkedIn'da Paylaş
+          </button></a>
+        <a href="https://twitter.com/intent/tweet?text=How%20Digitalization%20Is%20Supercharging%20Dubai%E2%80%99s%20Economy%20%E2%80%93%20In%20Every%20Sector&url=https://your-website.com"
+          target="_blank" rel="noopener noreferrer">
+          <button onclick="paylas('twitter')"
+            class="bg-blue-400 text-white p-2 rounded-full border hover:bg-blue-600 shadow-2xl">
+            Twitter'da Paylaş
+          </button></a>
+      </div>
+    </div>
+  </article>
+  <footer class="bg-gray-900 text-white text-sm p-12 md:p-40 gap-12 md:flex justify-center grid">
+    <div class="gap-2 grid justify-center">
+      <a href="index.html" class="text-xl font-light bg-red-600 p-2 h-11 text-center cursor-pointer">NEWS</a>
+      <div>
+        <div class="social flex gap-2">
+          <i class="fa-brands fa-instagram cursor-pointer hover:bg-red-900 p-2"></i>
+          <i class="fa-brands fa-twitter cursor-pointer hover:bg-red-900 p-2"></i>
+          <i class="fa-brands fa-facebook cursor-pointer hover:bg-red-900 p-2"></i>
+          <i class="fa-brands fa-tiktok cursor-pointer hover:bg-red-900 p-2"></i>
+          <i class="fa-brands fa-linkedin cursor-pointer hover:bg-red-900 p-2"></i>
+        </div>
+      </div>
+    </div>
+    <ul class="flex flex-wrap justify-center text-center gap-12 md:ustify-between">
+      <div class="grid gap-2">
+        <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
+        <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+        <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+        <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+        <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+        <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
+      </div>
+      <div class="grid gap-2">
+        <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
+        <a href="index.html" class="hover:text-gray-200">İletişim</a>
+        <a href="index.html" class="hover:text-gray-200">İletişim</a>
+        <a href="index.html" class="hover:text-gray-200">İletişim</a>
+        <a href="index.html" class="hover:text-gray-200">İletişim</a>
+        <a href="index.html" class="hover:text-gray-200">İletişim</a>
+      </div>
+      <div class="grid gap-2">
+        <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
+        <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+        <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+        <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+        <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+        <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+        <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
+      </div>
+      <div class="grid gap-2">
+        <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
+        <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+        <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+        <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+        <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+        <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
+      </div>
+      <div class="grid gap-2">
+        <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
         <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
         <a href="" class="hover:text-gray-200">Hakkımızda</a>
         <a href="" class="hover:text-gray-200">İletişim</a>
-
-        <button
-          class="bg-black text-white p-2 rounded-full border hover:bg-gray-800 shadow-2xl text-xs"
-        >
-          Abone ol!
-        </button>
-      </ul>
-    </nav>
-    <article class="grid justify-center">
-      <div
-        id="detay"
-        class="container grid gap-10 justify-center items-center border w-11/12 p-14 mt-32 m-12"
-      >
-        <h1 id="baslik" class="text-3xl"></h1>
-        <img id="detay-img" alt="Haber Resmi" />
-        <p id="detay-icerik" class="container w-4/5"></p>
-        <p><strong>Haber Tarihi:</strong> <span id="detay-tarih"></span></p>
-        <div>
-          <a
-            href="https://www.linkedin.com/shareArticle?url=https://your-website.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button
-              onclick="paylas('linkedin')"
-              class="bg-indigo-500 text-white p-2 rounded-full border hover:bg-indigo-700 shadow-2xl"
-            >
-              LinkedIn'da Paylaş
-            </button></a
-          >
-          <a
-            href="https://twitter.com/intent/tweet?text=How%20Digitalization%20Is%20Supercharging%20Dubai%E2%80%99s%20Economy%20%E2%80%93%20In%20Every%20Sector&url=https://your-website.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button
-              onclick="paylas('twitter')"
-              class="bg-blue-400 text-white p-2 rounded-full border hover:bg-blue-600 shadow-2xl"
-            >
-              Twitter'da Paylaş
-            </button></a
-          >
-        </div>
+        <a href="" class="hover:text-gray-200">İletişim</a>
+        <a href="" class="hover:text-gray-200">İletişim</a>
+        <a href="" class="hover:text-gray-200">Abone ol!</a>
       </div>
-    </article>
-    <footer
-      class="bg-gray-900 text-white text-sm p-12 md:p-40 gap-12 md:flex justify-center grid"
-    >
-      <div class="gap-2 grid justify-center">
-        <a
-          href="index.html"
-          class="text-xl font-light bg-red-600 p-2 h-11 text-center cursor-pointer"
-          >NEWS</a
-        >
-        <div>
-          <div class="social flex gap-2">
-            <i
-              class="fa-brands fa-instagram cursor-pointer hover:bg-red-900 p-2"
-            ></i>
-            <i
-              class="fa-brands fa-twitter cursor-pointer hover:bg-red-900 p-2"
-            ></i>
-            <i
-              class="fa-brands fa-facebook cursor-pointer hover:bg-red-900 p-2"
-            ></i>
-            <i
-              class="fa-brands fa-tiktok cursor-pointer hover:bg-red-900 p-2"
-            ></i>
-            <i
-              class="fa-brands fa-linkedin cursor-pointer hover:bg-red-900 p-2"
-            ></i>
-          </div>
-        </div>
-      </div>
-      <ul
-        class="flex flex-wrap justify-center text-center gap-12 md:ustify-between"
-      >
-        <div class="grid gap-2">
-          <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
-          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
-          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
-          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
-          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
-          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
-        </div>
-        <div class="grid gap-2">
-          <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
-          <a href="index.html" class="hover:text-gray-200">İletişim</a>
-          <a href="index.html" class="hover:text-gray-200">İletişim</a>
-          <a href="index.html" class="hover:text-gray-200">İletişim</a>
-          <a href="index.html" class="hover:text-gray-200">İletişim</a>
-          <a href="index.html" class="hover:text-gray-200">İletişim</a>
-        </div>
-        <div class="grid gap-2">
-          <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
-          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
-          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
-          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
-          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
-          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
-          <a href="index.html" class="hover:text-gray-200">Hakkımızda</a>
-        </div>
-        <div class="grid gap-2">
-          <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
-          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
-          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
-          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
-          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
-          <a href="index.html" class="hover:text-gray-200">Abone ol!</a>
-        </div>
-        <div class="grid gap-2">
-          <a href="index.html" class="font-bold text-2xl mb-5">NEWS</a>
-          <a href="index.html" class="hover:text-gray-200">Anasayfa</a>
-          <a href="" class="hover:text-gray-200">Hakkımızda</a>
-          <a href="" class="hover:text-gray-200">İletişim</a>
-          <a href="" class="hover:text-gray-200">İletişim</a>
-          <a href="" class="hover:text-gray-200">İletişim</a>
-          <a href="" class="hover:text-gray-200">Abone ol!</a>
-        </div>
-        <!-- Diğer bağlantılar ve abone ol butonları -->
-      </ul>
-    </footer>
+      <!-- Diğer bağlantılar ve abone ol butonları -->
+    </ul>
+  </footer>
 
-    <script src="./detayScript.js"></script>
-    <script src="../services/mockData.json"></script>
-  </body>
+  <script src="./detayScript.js"></script>
+  <script src="../services/mockData.json"></script>
+</body>
+
 </html>

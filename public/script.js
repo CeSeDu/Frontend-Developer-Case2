@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function haberKutusuIcerigiOlustur(baslik, icerik, tarih, resimURL, detayLink) {
   var haberDiv = document.createElement("a");
-  haberDiv.classList.add("haberKutusu"); 
+  haberDiv.classList.add("haberKutusu");
 
   // Haber detaylarına yönlendirecek link
   haberDiv.href = detayLink;
@@ -66,7 +66,7 @@ function haberKutusuIcerigiOlustur(baslik, icerik, tarih, resimURL, detayLink) {
 
 function haberKutusuIcerigiOlustur4(baslik, resimURL, aciklama, detayLink) {
   var haberDiv = document.createElement("a");
-  haberDiv.classList.add("haberKutusu"); 
+  haberDiv.classList.add("haberKutusu");
 
   // Haber detaylarına yönlendirecek link
   haberDiv.href = detayLink;
