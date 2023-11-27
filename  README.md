@@ -24,3 +24,7 @@ Aynı haber kartlarını farklı alanlarda kullanabilmek için modüler bir yap�
 
 5. Sonuç
    Haber listesi uygulaması başarıyla geliştirildi ve kullanıma sunuldu. Kullanıcılar, web uygulamasını kullanarak güncel haberleri kolayca takip edebilirler. Proje sürecinde karşılaşılan zorluklar, araştırmalalr sayesinde çözümlendi.
+
+
+
+Proje anlatım videosu : https://www.loom.com/share/fc4386ab153644d48e0fc91c1cea9826
